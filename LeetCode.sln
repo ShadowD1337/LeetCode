@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CED73927-2734-44FC-8E30-F9DCA1940AF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Int To Roman", "src\Int To Roman\Int To Roman.csproj", "{E69094EA-5D75-4A91-8B0C-784C39F5B5ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse Linked List", "src\Reverse Linked List\Reverse Linked List.csproj", "{B99F3C93-05AE-4A18-85E7-2C03C91D74EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knight Dialer", "src\Knight Dialer\Knight Dialer.csproj", "{7C05E147-395B-4220-98F4-78F85D1AFAFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E69094EA-5D75-4A91-8B0C-784C39F5B5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69094EA-5D75-4A91-8B0C-784C39F5B5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69094EA-5D75-4A91-8B0C-784C39F5B5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69094EA-5D75-4A91-8B0C-784C39F5B5ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99F3C93-05AE-4A18-85E7-2C03C91D74EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99F3C93-05AE-4A18-85E7-2C03C91D74EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99F3C93-05AE-4A18-85E7-2C03C91D74EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99F3C93-05AE-4A18-85E7-2C03C91D74EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C05E147-395B-4220-98F4-78F85D1AFAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C05E147-395B-4220-98F4-78F85D1AFAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C05E147-395B-4220-98F4-78F85D1AFAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C05E147-395B-4220-98F4-78F85D1AFAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E69094EA-5D75-4A91-8B0C-784C39F5B5ED} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
+		{B99F3C93-05AE-4A18-85E7-2C03C91D74EC} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
+		{7C05E147-395B-4220-98F4-78F85D1AFAFC} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF9F280A-E67D-4531-9282-1E7857C5667B}
+	EndGlobalSection
+EndGlobal
