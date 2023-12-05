@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Int To Roman", "src\Int To 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse Linked List", "src\Reverse Linked List\Reverse Linked List.csproj", "{B99F3C93-05AE-4A18-85E7-2C03C91D74EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knight Dialer", "src\Knight Dialer\Knight Dialer.csproj", "{7C05E147-395B-4220-98F4-78F85D1AFAFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Knight Dialer", "src\Knight Dialer\Knight Dialer.csproj", "{7C05E147-395B-4220-98F4-78F85D1AFAFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add Two Numbers (Linked List)", "src\Add Two Numbers\Add Two Numbers (Linked List).csproj", "{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{7C05E147-395B-4220-98F4-78F85D1AFAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C05E147-395B-4220-98F4-78F85D1AFAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C05E147-395B-4220-98F4-78F85D1AFAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{E69094EA-5D75-4A91-8B0C-784C39F5B5ED} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
 		{B99F3C93-05AE-4A18-85E7-2C03C91D74EC} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
 		{7C05E147-395B-4220-98F4-78F85D1AFAFC} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
+		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF9F280A-E67D-4531-9282-1E7857C5667B}

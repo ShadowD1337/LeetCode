@@ -1,4 +1,4 @@
-﻿namespace Reverse_Linked_List;
+﻿namespace ReverseLinkedList;
 
 internal class Program
 {

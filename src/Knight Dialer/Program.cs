@@ -1,6 +1,6 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 
-namespace Knight_Dialer;
+namespace KnightDialer;
 
 internal class Program
 {
