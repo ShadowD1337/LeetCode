@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Knight Dialer", "src\Knight
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add Two Numbers (Linked List)", "src\Add Two Numbers\Add Two Numbers (Linked List).csproj", "{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Longest Substring Without Repeating Characters", "src\Longest Substring Without Repeating Characters\Longest Substring Without Repeating Characters.csproj", "{757EBCE5-9B66-44CB-8D53-4419BA6820E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757EBCE5-9B66-44CB-8D53-4419BA6820E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757EBCE5-9B66-44CB-8D53-4419BA6820E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757EBCE5-9B66-44CB-8D53-4419BA6820E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757EBCE5-9B66-44CB-8D53-4419BA6820E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{B99F3C93-05AE-4A18-85E7-2C03C91D74EC} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
 		{7C05E147-395B-4220-98F4-78F85D1AFAFC} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
 		{7FE3F12E-1D45-41AE-806E-BAAD9C24E78A} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
+		{757EBCE5-9B66-44CB-8D53-4419BA6820E8} = {CED73927-2734-44FC-8E30-F9DCA1940AF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF9F280A-E67D-4531-9282-1E7857C5667B}
