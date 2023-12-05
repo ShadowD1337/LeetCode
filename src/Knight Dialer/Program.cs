@@ -8,95 +8,56 @@ internal class Program
     {
         while(true) Console.WriteLine(KnightDialer(Convert.ToInt32(Console.ReadLine())));
     }
-    //TODO: way too time complex. Inputs above 20 would take hours to compute and above a certain number it gives StackOverflowException.
+    //TODO: way too time complex. Inputs above 50 would take hours to compute and above a certain number it gives StackOverflowException.
     public static int KnightDialer(int n)
     {
-        var numbers = new List<List<int>>();
+        var counter = 0;
 
         for(int i = 0; i <= 9; i++)
         {
             if (n == 1)
             {
-                numbers.Add(new List<int> { i });
+                counter++;
                 continue;
             }
             if (i == 5) continue;
-
-            foreach (var combo in GenerateCombos(i, n))
-            {
-                numbers.Add(combo);
-            }
+            GenerateCombos(i, n, ref counter);
         }
 
-        return numbers.Count;
+        return counter;
     }
-    public static IEnumerable<List<int>> GenerateCombos(int currentNum, int length) => GenerateCombos(currentNum, length, new List<int>());
-    public static IEnumerable<List<int>> GenerateCombos (int currentNum, int length, List<int> number)
+    public static Task GenerateCombos(int currentNum, int length, ref int counter)
     {
-        number.Add(currentNum);
         if (length <= 1)
         {
-            yield return number;
-            yield break;
+            counter++;
+            return Task.CompletedTask;
         }
         if (currentNum == 0)
         {
-            foreach (var combo in GenerateCombos(4, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(6, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(4, length - 1, ref counter);
+            GenerateCombos(6, length - 1, ref counter);
         }
         else if (currentNum == 1)
         {
-            foreach (var combo in GenerateCombos(6, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(8, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(6, length - 1, ref counter);
+            GenerateCombos(8, length - 1, ref counter);
         }
         else if (currentNum == 2)
         {
-            foreach (var combo in GenerateCombos(7, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(9, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(7, length - 1, ref counter);
+            GenerateCombos(9, length - 1, ref counter);
         }
         else if (currentNum == 3)
         {
-            foreach (var combo in GenerateCombos(4, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(8, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(4, length - 1, ref counter);
+            GenerateCombos(8, length - 1, ref counter);
         }
         else if (currentNum == 4)
         {
-            foreach (var combo in GenerateCombos(0, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(3, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(9, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(0, length - 1, ref counter);
+            GenerateCombos(3, length - 1, ref counter);
+            GenerateCombos(9, length - 1, ref counter);
         }
         else if (currentNum == 5)
         {
@@ -105,51 +66,25 @@ internal class Program
 
         else if (currentNum == 6)
         {
-            foreach (var combo in GenerateCombos(0, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(1, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(7, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(0, length - 1, ref counter);
+            GenerateCombos(1, length - 1, ref counter);
+            GenerateCombos(7, length - 1, ref counter);
         }
         else if (currentNum == 7)
         {
-            foreach (var combo in GenerateCombos(2, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(6, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(2, length - 1, ref counter);
+            GenerateCombos(6, length - 1, ref counter);
         }
         else if (currentNum == 8)
         {
-            foreach (var combo in GenerateCombos(1, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(3, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(1, length - 1, ref counter);
+            GenerateCombos(3, length - 1, ref counter);
         }
         else if (currentNum == 9)
         {
-            foreach (var combo in GenerateCombos(2, length - 1, number))
-            {
-                yield return combo;
-            }
-            foreach (var combo in GenerateCombos(4, length - 1, number))
-            {
-                yield return combo;
-            }
+            GenerateCombos(2, length - 1, ref counter);
+            GenerateCombos(4, length - 1, ref counter);
         }
+        return Task.CompletedTask;
     }
 }
