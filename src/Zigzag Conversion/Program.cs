@@ -6,7 +6,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Convert("AB", 3) == "");
+        Console.WriteLine(Convert("AB", 3) == "AB");
     }
     public static string Convert(string s, int numRows)
     {
